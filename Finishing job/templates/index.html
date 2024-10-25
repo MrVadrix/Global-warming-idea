@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Global Warming Home</title>
+</head>
+<body>
+    <h1>Global warming is something to talk about!</h1>
+    <!-- Button with an image inside -->
+    <form action="{{ url_for('page2') }}" method="get">
+        <button type="submit">
+            <img src="{{ url_for('static', filename='ice caps.jpg') }}" alt="Button Image" style="width: 150px; height: 100px;">
+            <p>Melting Ice Caps</p>
+        </button>
+    </form>
+</body>
+</html>
