@@ -9,6 +9,26 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  color: rgb(79, 40, 124);
+}
+
+h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(48, 0, 59);
+  text-align: left;
+  margin-bottom: -25px;
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  color: rgb(79, 40, 124);
+}
+
 .center-button {
   display: flex;
   justify-content: center; /* Centers the button */
@@ -19,16 +39,46 @@ button {
   background-color: #007BFF; /* Primary blue color */
   color: white;              /* White text */
   border: none;              /* Remove default border */
-  padding: 15px 24px;        /* Padding inside the button */
+  padding: 30px 20px;        /* Adjust padding as needed */
   font-size: 16px;           /* Text size */
   font-weight: bold;         /* Make the text bold */
   margin-left: 20px;
   border-radius: 8px;        /* Rounded corners */
   cursor: pointer;           /* Show pointer on hover */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
   
   display: flex;
-  justify-content: center; /* Centers the button */
-  margin-top: 20px;        /* Optional: adds space above the button */
+  align-items: center;       /* Aligns image and text vertically */
+  justify-content: flex-start; /* Aligns contents to the left */
+  gap: 10px;                 /* Space between image and text */
+  margin-top: 20px;          /* Adds space above the button */
+}
+
+button p {
+  margin: 0;                 /* Remove default margin */
+  text-align: left;          /* Align text to the left */
+  color: white;
+}
+
+.container {
+  overflow: auto; /* Clear floats */
+}
+
+.resized-image {
+  width: 300px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #ccc; /* Optional border */
+  border-radius: 5px; /* Optional rounded corners */
+  float: right; /* Float the image to the right */
+  margin-right: 150px; /* Optional margin for spacing */
+  margin-top: 100px;
+}
+
+.resized-image2 {
+  width: 300px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #ccc; /* Optional border */
+  border-radius: 5px; /* Optional rounded corners */
+  float: right; /* Float the image to the right */
+  margin-right: 150px; /* Optional margin for spacing */
 }
