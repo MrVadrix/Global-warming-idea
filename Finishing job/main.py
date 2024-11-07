@@ -12,5 +12,9 @@ def page1():
 def page2():
     return render_template('scnd.html')
 
+@app.route('/third')
+def page3():
+    return render_template('third.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
