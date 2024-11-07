@@ -1,6 +1,11 @@
 body {
   background-color: lightblue;
+  background-image: url("tree-branch-better.png");
+  background-repeat: no-repeat;
+  background-position: center top;      /* Centers horizontally and aligns to the top */
+  background-size: 50% 200vh;           /* Sets width to 50% of viewport and height to 200vh */
 }
+
 
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -27,6 +32,13 @@ p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 15px;
   color: rgb(79, 40, 124);
+}
+
+.new-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+  margin-top: -180px;
 }
 
 .center-button {
