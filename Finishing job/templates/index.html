@@ -7,7 +7,7 @@
     <title>Global Warming Home</title>
 </head>
 <body>
-    <h1>Global warming is something to talk about!</h1>
+    <h1>Надо говорить о климате!</h1>
     <!-- Button with an image inside -->
     <form action="{{ url_for('page2') }}" method="get">
         <button type="submit">
@@ -15,5 +15,13 @@
             <p>Таяние ледников</p>
         </button>
     </form>
+    <form class="new-button" action="{{ url_for('page3') }}" method="get">
+        <button type="submit">
+            <img src="{{ url_for('static', filename='drout.png') }}" alt="Button Image" style="width: 150px; height: 100px;">
+            <p>Засуха</p>
+        </button>
+    </form>
+
+    
 </body>
 </html>
